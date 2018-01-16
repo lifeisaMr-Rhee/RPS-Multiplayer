@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Multi-Player RPS!</title>
+
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="assets/javascript/config.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  	<div class="container">
+
+	  	<div class="jumbotron">
+	      <h1 class="text-center"><strong>Play Rock-Paper-Scissors with a Friend!</strong></h1>
+	      <h2 class="text-center">Enter a username to start the game</h2>
+	    </div> 
+
+	    <div class="formPanel"> 
+        	<form id="name-form">
+          		<input type="text" id="name-input" placeholder="Your Name">
+          		<input id="add-name" type="submit" value="Submit">
+        	</form>
+      	</div> 
+
+		<div class="panel panel-default">
+		    <div class="row"> 
+
+		        <div class="col-lg-4 col-md-4 col-sm-4">
+		            <div class="panel panel-default playerPanel" id="playerPanel1">
+		                <div class="panel-heading panelName">
+							<h3 class="panel-title text-center" id="playerOneName"></h3>
+						</div>
+
+		                <div class="panel-body panelOption text-center">
+		                	<div class="option">Rock</div>
+		                </div>
+
+		                <div class="panel-body panelOption text-center">
+		                	<div class="option">Paper</div>
+		                </div>
+
+		                <div class="panel-body panelOption text-center">
+		                	<div class="option">Scissors</div>
+		                </div>
+
+		                <div class="panel-body panelStats text-center">
+		                	<div class="stats" id="player1Stats"></div>
+		                </div>
+		            </div>
+		        </div> 
+		        
+
+		        <div class="col-lg-4 col-md-4 col-sm-4">
+		            <div class="panel panel-default gamePanel">
+		            	<h3 class="panel-title text-center" id="waitingNotice"></h3>
+		            	<h3 class="panel-title text-center" id="roundOutcome">Rock-Paper-Scissors</h3>
+		            </div>
+		        </div> 
+		        
+
+		        <div class="col-lg-4 col-md-4 col-sm-4">
+		            <div class="panel panel-default playerPanel" id="playerPanel2">
+		                <div class="panel-heading panelName">
+							<h3 class="panel-title text-center" id="playerTwoName"></h3>
+						</div>
+
+		                <div class="panel-body panelOption text-center">
+		                	<div class="option">Rock</div>
+		                </div>
+
+		                <div class="panel-body panelOption text-center">
+		                	<div class="option">Paper</div>
+		                </div>
+
+		                <div class="panel-body panelOption text-center">
+		                	<div class="option">Scissors</div>
+		                </div>
+
+
+		                <div class="panel-body panelStats text-center">
+		                	<div class="stats" id="player2Stats"></div>
+		                </div>
+		            </div>
+		        </div> 
+		        
+		    </div> 
+		</div> 
+
+
+	    <div class="row">
+
+	    	<div class="col-lg-8 col-md-8 col-sm-8">
+	    		<div id="chatDisplay"></div>
+	    	</div>
+
+		    <div class="col-lg-4 col-md-4 col-sm-4"> 
+		    	<div class="chatInput">
+		    		<div class="chatLabel">Talk Trash!</div>
+
+					<div class="chatPanel"> 
+						<form id="chat-form">
+							<textarea type="text" id="chat-input"></textarea>
+							<input id="chat-send" type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+	      	</div> 
+
+	    </div> 
+
+
+	    <div class="row">
+
+	      <div id="footerSpacer">
+	      </div>
+
+	      <div class="footer navbar-fixed-bottom" id="footerPanel">
+	        <div class="copyright">
+	          © 2018 copyright James Rhee
+	        </div>
+	      </div>
+
+	    </div> 
+
+	</div> 
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+body {
+	background: url('../images/maxresdefault.jpg');
+}
+
+.container { 
+	width: 80% 
+}
+
+.jumbotron {
+  background-color: #3d0505;
+  padding: 20px 30px;
+  margin: 20px 0px 15px 0px;
+  width: 100%;
+}
+
+.jumbotron h1 {
+	font-size: 60px;
+    color: #e407128f;
+}
+
+.jumbotron h2 {
+	font-size: 30px;
+    color: #d3ba84;
+}
+
+.formPanel {
+	width: 100%;
+	height: 80px;
+	border-radius: 10px;
+	background-color:transparent;
+	margin: 0px 0px 30px 0px;
+}
+
+#name-input {
+  width: 200px;
+  height: 30px;
+  color: #f79089;
+  text-align: center;
+  margin-left: 33%;
+  border-radius: 10px;
+  background-color: #cdd9ea;
+}
+
+#name-input:focus {
+	color: #d14e2d;
+	background-color: white;
+}
+
+#add-name {
+	width: 200px;
+	margin-top: 15px;
+	margin-left: 30px;
+	padding: 5px 45px;
+	border-radius: 10px;
+	color: #084596;
+	font-weight: normal;
+}
+
+.panel {
+	background-color: transparent;
+	border: none;
+}
+
+.playerPanel {
+	height: 283px;
+	background-color: transparent;
+	border: 3px solid #b03138;
+	border-radius: 10px;
+}
+
+.playerPanelTurn {
+	border: 5px solid #27CC73;
+}
+
+.playerPanel .panelName {
+	height: 65px;
+	background-color: #cdd9ea;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.playerPanel .panelName h3 {
+	font-size: 2em;
+	color: #b03138;
+	margin: 0.25em 0em 0em 0em;
+}
+
+.playerPanel .panelOption {
+	height: 50px;
+	background-color: #efd5d7;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #084596;
+}
+
+.playerPanel .panelOption .option {
+	margin: -0.2em 0em 0em 0em;
+}
+
+.playerPanel .panelOption:hover {
+	background-color: #e7c1c3;
+}
+
+.playerPanel .panelOption:active {
+  background-color: #d7989b;
+}
+
+.playerPanel .panelStats {
+	height: 60px;
+	background-color: #f8de9e;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #084596;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.gamePanel {
+	height: 281px;
+	background-color: rgb(250, 86, 86);
+	border: 3px dashed #ef540d;
+	border-radius: 10px;
+}
+
+.gamePanel h3 {
+	font-size: 3.5em;
+	color: #b03138;
+	margin: 20px 0px 0px 0px;
+}
+
+#waitingNotice {
+	font-size: 20px;
+	color: #ad611a;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+#chatDisplay {
+	height: 150px;
+	width: 100%;
+	overflow: auto;
+	text-align: left;
+  	border-radius: 10px;
+  	background-color: #cdd9ea;
+	font-size: 1em;
+	color: #084596;
+	padding: 15px 15px 15px 15px;
+}
+
+.chatInput {
+	height: 150px;
+  	border-radius: 10px;
+  	background-color: #501616;
+}
+
+.chatLabel {
+	font-size: 1.5em;
+	color: #fd2732;
+	text-align: center;
+	font-weight: bold;
+	padding: 15px 15px 0px 15px;
+}
+
+#chat-input {
+	width: 60%;
+	height: 90px;
+	margin-left: 15px;
+	margin-right: 5px;
+	color: #b4c7df;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #cdd9ea;
+}
+
+#chat-input:focus {
+	color: #084596;
+	background-color: white;
+}
+
+#chat-send {
+	width: 30%;
+	height: 90px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	color: #084596;
+	font-weight: normal;
+	position: relative;
+	top: -40px;
+}
+
+.chatColor1 {
+	color: #b03138;
+}
+
+.chatColor2 {
+	color: #084596;
+}
+
+.chatColorDisconnected {
+	color: #efad0d;
+	font-style: italic;
+}
+
+.chatColorJoined {
+	color: #27CC73;
+	font-style: italic;
+}
+
+#footerSpacer {
+  background: transparent;
+  width: 100%;
+  height: 70px;
+}
+
+#footerPanel {
+  text-align: center;
+  color: #72a1d3;
+  background-color: #4d1e1e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
